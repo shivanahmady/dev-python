@@ -1,0 +1,254 @@
+@charset 'UTF-8';
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #1b1b1bd6;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: top left, center 0;
+  background-attachment: fixed, fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body.is-scroll {
+  background-attachment: scroll, scroll;
+  background-size: auto, 100% auto;
+}
+
+body.is-loading * {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  white-space: normal;
+  -webkit-text-orientation: unset;
+  box-shadow: unset;
+  margin: 2em 0em;
+  overflow: overlay;
+  line-height: 2;
+  width: 100%;
+  color: #f7f7f7;
+}
+li {
+  font-family: "Ubuntu", sans-serif;
+  display: list-item;
+  list-style: circle;
+}
+
+table {
+  max-width: 59em;
+  box-shadow: -1px 1px 11px 10px #0000006b;
+  padding: 5%;
+  background-color: #080808;
+  min-height: 23em;
+  width: 43em;
+  color: bisque;
+}
+
+thead {
+  background-color: #71717117;
+  line-height: 2em;
+  color: white;
+}
+
+tbody {
+  box-shadow: 0px -2px 4px 2px #000000a8;
+  background-color: #00000026;
+  font: -webkit-mini-control;
+  display: contents;
+}
+h1 {
+  color: #fffe00;
+  line-height: 3em;
+  margin: 2px 0px 0 0;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: "ubuntu";
+  padding: 0;
+}
+h2 {
+  line-height: 1em;
+  margin: 3em 0em 0.01em 0em;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+
+h3 {
+  line-height: 1;
+  margin: 4px 0px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: large;
+  text-transform: capitalize;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+
+strong,
+b {
+  font-weight: 400;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+a {
+  color: #35b88f;
+  text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+  -moz-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -o-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  text-decoration: none;
+  border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+}
+
+a:hover {
+  border-bottom-color: rgba(53, 184, 143, 0);
+}
+
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+hr {
+  border: 0;
+  border-top: dashed 1px #f9fff554;
+  margin: 1em 1em 2em 1em;
+}
+
+blockquote {
+  padding: 2% 2%;
+  background-color: rgba(62, 66, 66, 0.12);
+  margin: 1em;
+}
+
+p,
+ol,
+dl,
+table {
+  color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  font-weight: 100;
+  font-size: unset;
+  line-height: 1.5;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+header p {
+  display: block;
+  margin: 0.5em 0 0 0;
+  padding: 0 0 1.5em 0;
+}
+
+footer {
+  margin-top: 1em;
+}
+
+br.clear {
+  clear: both;
+}
+
+html,
+body,
+#editor {
+  margin: 0;
+  height: auto;
+  padding-left: 0px;
+  display: block;
+  background-color: #101015b5;
+  width: auto;
+}
+
+textarea,
+#editor div {
+  display: inline-grid;
+  width: -webkit-fill-available;
+  vertical-align: top;
+  padding: 1% 6% 0% 3%;
+  min-width: 35%;
+  max-width: 44%;
+  box-shadow: inset 20px -18px 6px 3px #0404048c;
+}
+
+textarea {
+  height: 95%;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.93);
+  font-size: smaller;
+  font-family: unset;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 1);
+  width: -webkit-fill-available;
+  overflow: scroll;
+  white-space: normal;
+  max-width: 32%;
+  border-radius: 1em;
+  position: fixed;
+  margin: 1% 0% 0% 1%;
+  box-shadow: 47px -12px 86px -4px #440085ff;
+  font-weight: 100;
+  border: 11px double rgba(97, 66, 200, 1);
+  border-top: 0px solid rgba(0, 0, 0, 1);
+}
+
+code {
+  color: rgba(142, 120, 255, 0.9);
+  background-color: #ffffff14;
+  display: inline-flex;
+  box-shadow: -10px 0 0 #3212ffff;
+  margin: 0em 2em;
+  font-style: oblique;
+  font-weight: 100;
+  min-width: 22em;
+  padding: 2% 1%;
+  list-style: none;
+  line-height: 1em;
+}
